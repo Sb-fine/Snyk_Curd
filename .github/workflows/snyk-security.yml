@@ -46,7 +46,7 @@ jobs:
         with:
            node-version: 16
       - name: Authenticate snyk
-        run: npx snyk auth 274384d1-60a4-4787-9aa5-b035bcc583ef
+        run: npx snyk auth 75f5d45a-c013-4a31-8aa7-31f877baba0f
 
       #- name: run Snyk test
        # run: npx snyk test
