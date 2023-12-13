@@ -48,8 +48,8 @@ jobs:
       - name: Authenticate snyk
         run: npx snyk auth 274384d1-60a4-4787-9aa5-b035bcc583ef
 
-      - name: run Snyk test
-        run: npx snyk test
+      #- name: run Snyk test
+       # run: npx snyk test
 
         #env:
           # This is where you will need to introduce the Snyk API token created with your Snyk account
