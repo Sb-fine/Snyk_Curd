@@ -59,11 +59,10 @@ jobs:
         # Runs Snyk Code (SAST) analysis and uploads result into GitHub.
         # Use || true to not fail the pipeline
       - name: Snyk Code test
-        run: cd backend 
-             snyk code test || true
+        run: snyk code test || true
 
-      - name: snyk org
-        run: --org=75f5d45a-c013-4a31-8aa7-31f877baba0f
+      # - name: snyk org
+      #   run: --org=75f5d45a-c013-4a31-8aa7-31f877baba0f
 
       #   # Runs Snyk Open Source (SCA) analysis and uploads result to Snyk.
       - name: Snyk Open Source monitor
